@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Brianne Villarama</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Brianne Villarama</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/414524613_677343107879637_7592865103071314860_n.jpg"
+            alt="picture of myself"
+          />
+        </div>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Brianne Villarama</h1>
+        <p class="section__text__p2">Front-end Devloper</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/LinkedIn_logo_initials.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/brianne-villarama-3b8b282aa/'"
+          />
+          <img
+            src="./assets/25231.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/BrianneVillarama'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h3 class="title">About Me</h3>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/414524613_677343107879637_7592865103071314860_n.jpg"
+            alt="Picture of Me"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/png-transparent-computer-icons-experience-stagiair-experience-text-logo-monochrome.png"
+                alt="Experience-Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                Front-end Development <br />
+                Back-end Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/png-transparent-computer-icons-experience-stagiair-experience-text-logo-monochrome.png"
+                alt="Experience-Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                <b>Senior High</b><br />Information and Technology Communication
+              </p>
+              <p>
+                <b>College</b> <br />Bachelor of Science in Computer Science
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My hobbies are reading mangas, playing games, and when i have free
+              time i always take the chance to upskill my knowledge I read or
+              watch somethings related to programming especially the road to
+              becoming a full stack.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/12-122997_down-arrow-transparent-image-down-arrow-png-transparent.png"
+        alt="Arrow-down"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-End Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-End Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.Js</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/free-checkmark-2653425-2202874.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express.Js</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/12-122997_down-arrow-transparent-image-down-arrow-png-transparent.png"
+        alt="Arrow-down"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Screenshot (7).png"
+                alt="Project image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tindog</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/BrianneVillarama/Tindog'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://briannevillarama.github.io/Tindog/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Screenshot (9).png"
+                alt="Project image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Drumset</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/BrianneVillarama/Drumset'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://briannevillarama.github.io/Drumset/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/360_F_525226337_x7lLRcnU08vDLkijRwgcbaIs8zCfDktC.jpg"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="https://mail.google.com/">briannevillarama04@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/LinkedIn_logo_initials.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/brianne-villarama-3b8b282aa/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &copy; 2023 Brianne Villarama. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
